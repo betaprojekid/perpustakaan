@@ -1,0 +1,45 @@
+fitur:
+  ☐ menu login hanya untuk staff / admin
+  ☐ fitur anggota
+    ☐ daftar anggota
+    ☐ pencarian anggota
+    ☐ pencarian data(nim, nama, pinjaman buku, tagihan buku)
+    ☐ pinjaman buku
+    ☐ pengembalian buku
+    ☐ keterlambatan
+    ☐ sanksi
+  ☐ fitur pengunjung
+    ☐ absensi nama dan nim
+  ☐ fitur laporan
+    ☐ laporan peminjaman
+    ☐ laporan pengembalian
+    ☐ laporan sanksi
+    ☐ laporan kunjungan
+      ☐ export laporan per hari/ per minggu/ per bulan ke excel
+  ☐ fitur buku
+    ☐ pencarian
+    ☐ tambah
+    ☐ edit
+    ☐ buku yang sedang dipinjam
+    ☐ buku yang sudah dikembalikan
+    ☐ buku yang tersedia di perpus
+  ☐ fitur transaksi
+    ☐ data peminjam -> (nim dan nama otomatis muncul)
+    ☐ buku yang dipinjam
+    ☐ tgl dipinjam (ketika buku di pinjam maka buku akan berkurang sesuai stok buku)
+    ☐ tgl kembali (ketika buku di kembalikan buku akan bertambah sesuai stok buku)
+    ☐ sanksi
+  ☐ fitur user
+    ☐ tambah
+    ☐ edit
+    ☐ hapus
+    ☐ list
+
+Database:
+  ☐ angota
+  ☐ user
+  ☐ buku
+  ☐ transksi
+  ☐ prodi
+  ☐ kategori
+  ☐ lokasi buku
