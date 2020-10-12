@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# tampilan
+# dashbord
+# anggota
+# buku
+# transaksi
+# laporan
+# pengaturan
+
+
+Options All -Indexes
+</IfModule>
