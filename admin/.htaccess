@@ -1,14 +1,25 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
 
-RewriteRule ^login$ login.php [L]
 #autentikasi
+# RewriteRule ^login$ login.php [L]
+
 # tampilan
-# dashbord
+
 # anggota
+RewriteRule ^anggota$ index.php?page=anggota [L]
+RewriteRule ^add-anggota$ index.php?page=add-anggota [L]
+
+
 # buku
+RewriteRule ^buku$ index.php?page=buku [L]
+
 # transaksi
+RewriteRule ^transaksi index.php?page=transaksi [L]
+
 # laporan
+RewriteRule ^laporan index.php?page=laporan [L]
+
 # pengaturan
 
 

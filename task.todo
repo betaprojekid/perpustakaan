@@ -1,9 +1,14 @@
 fitur:
   ☐ menu login hanya untuk staff / admin
   ☐ fitur anggota
-    ☐ daftar anggota
-    ☐ pencarian anggota
-    ☐ pencarian data(nim, nama, pinjaman buku, tagihan buku)
+    ✔ daftar anggota @done(20-10-13 22:03)
+    ✔ pencarian anggota @done(20-10-13 22:03)
+    ✔ pencarian data(nim, nama, pinjaman buku, tagihan buku) @done(20-10-13 22:03)
+    ☐ tambah
+    ☐ edit
+    ☐ view
+    ☐ delete
+  ☐ pinjaman
     ☐ pinjaman buku
     ☐ pengembalian buku
     ☐ keterlambatan
@@ -46,9 +51,9 @@ Database:
   ✔ pengunjung @done(20-10-13 07:41)
 
 seeder:
-  ☐ anggota
-  ☐ user
-  ☐ buku
-  ☐ prodi
-  ☐ kategori
-  ☐ lokasi buku
+  ✔ anggota @done(20-10-13 20:09)
+  ✔ user @done(20-10-13 20:09)
+  ✔ buku @done(20-10-13 20:09)
+  ✔ prodi @done(20-10-13 20:09)
+  ✔ kategori @done(20-10-13 20:09)
+  ✔ lokasi buku @done(20-10-13 20:09)

@@ -1,6 +1,6 @@
 <?php
 
-function noDos($data){
+function nodos($data){
 	global $conn;
 
 	$sql = stripslashes(strip_tags(htmlspecialchars($data, ENT_QUOTES)));

@@ -37,6 +37,18 @@
   <script src="<?= base_url()?>/assets/js/pages/dashboard.js"></script>
   <!-- AdminLTE for demo purposes -->
   <script src="<?= base_url()?>/assets/js/demo.js"></script>
+  <!-- DataTables -->
+  <script src="<?= base_url()?>/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="<?= base_url()?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('table.table-list').DataTable({
+        "paging": true,
+        "ordering": true,
+        "info": true,
+      });
+    });
+  </script>
 </body>
 
 </html>
