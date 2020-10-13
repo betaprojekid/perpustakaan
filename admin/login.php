@@ -26,7 +26,7 @@ include_once "../helpers/helper.php";
 
 </head>
 
-<body class="hold-transition login-page" style="background-image: url(../assets/img/bg.jpg); background-size:cover;">
+<body class="hold-transition login-page" style="background-image: url(<?=base_url()?>/assets/img/bg.jpg); background-size:cover;">
   <div class="login-box">
     <div class="login-logo card">
       <a href="#"><b>Halaman</b> Login</a>
@@ -57,6 +57,9 @@ include_once "../helpers/helper.php";
             <!-- /.col -->
             <div class="col-4">
               <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </div>
+            <div class="col-8 d-flex align-items-center justify-content-end">
+              <a href="<?=base_url()?>" class="text-danger">Kembali</a>
             </div>
             <!-- /.col -->
           </div>

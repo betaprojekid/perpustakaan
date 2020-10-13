@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule login$ admin/login.php [L]
+#autentikasi
+# tampilan
+# dashbord
+# anggota
+# buku
+# transaksi
+# laporan
+# pengaturan
+
+
+Options All -Indexes
+</IfModule>

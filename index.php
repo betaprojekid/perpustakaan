@@ -1,3 +1,6 @@
+<?php
+include 'helpers/base_url.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,8 +55,8 @@
     <div class="help-block text-center">
       Masukkan NIM (Nomor Induk Siswa) Anda sebagai bukti absensi anda
     </div>
-    <div class="text-center">
-      <a href="login.html">Masuk sebagai Staff Perpustakaan</a>
+    <div class="text-center mt-4">
+      <a href="<?= base_url('login')?>">Masuk sebagai Staff Perpustakaan</a>
     </div>
   </div>
   <!-- /.center -->
