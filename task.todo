@@ -5,9 +5,8 @@ fitur:
     ✔ pencarian anggota @done(20-10-13 22:03)
     ✔ pencarian data(nim, nama, pinjaman buku, tagihan buku) @done(20-10-13 22:03)
     ✔ tambah @done(20-10-13 23:42)
-    ☐ edit
-    ☐ view
-    ☐ delete
+    ✔ edit @done(20-10-14 22:19)
+    ✔ delete @done(20-10-14 22:19)
   ☐ pinjaman
     ☐ pinjaman buku
     ☐ pengembalian buku
@@ -22,9 +21,11 @@ fitur:
     ☐ laporan kunjungan
       ☐ export laporan per hari/ per minggu/ per bulan ke excel
   ☐ fitur buku
-    ☐ pencarian
-    ☐ tambah
-    ☐ edit
+    ✔ pencarian @done(20-10-14 23:09)
+    ✔ tambah @done(20-10-14 23:33)
+    ✔ edit @done(20-10-14 23:50)
+    ✔ delete @done(20-10-14 23:51)
+    ✔ export @done(20-10-14 23:59)
     ☐ buku yang sedang dipinjam
     ☐ buku yang sudah dikembalikan
     ☐ buku yang tersedia di perpus

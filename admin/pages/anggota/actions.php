@@ -75,4 +75,26 @@ if(isset($_POST['add'])){
         ";
         exit;
   }
+}elseif(isset($_GET['act']) && $_GET['act'] === 'delete'){
+  $id = $_GET['id'];
+
+  // echo 'id ' . $id . ' mau di hapus gak !';
+  // die();
+  $query = "DELETE
+            FROM
+              anggota
+            WHERE
+              id = '$id'
+            ";
+  $sql = mysqli_query($conn, $query)or die("Error: " . mysqli_error($conn));
+
+  if($sql){
+    echo "
+            <script>
+                alert('data telah di hapus');
+                document.location.href = '".$path."';
+            </script>
+        ";
+        exit;
+  }
 }

@@ -10,11 +10,17 @@ RewriteEngine on
 RewriteRule ^anggota$ index.php?page=anggota [L]
 RewriteRule ^add-anggota$ index.php?page=add-anggota [L]
 RewriteRule ^edit-anggota/(.*)$ index.php?page=edit-anggota&id=$1 [L]
-RewriteRule ^view-anggota/(.*) index.php?page=view-anggota&id=$1 [L]
+RewriteRule ^hapus-anggota/(.*)$ index.php?page=hapus-anggota&act=delete&id=$1 [L]
+RewriteRule ^export-anggota$ pages/anggota/export.php [L]
+# RewriteRule ^view-anggota/(.*) index.php?page=view-anggota&id=$1 [L]
 
 
 # buku
 RewriteRule ^buku$ index.php?page=buku [L]
+RewriteRule ^add-buku$ index.php?page=add-buku [L]
+RewriteRule ^edit-buku/(.*)$ index.php?page=edit-buku&id=$1 [L]
+RewriteRule ^hapus-buku/(.*)$ index.php?page=hapus-buku&act=delete&id=$1 [L]
+RewriteRule ^export-buku$ pages/buku/export.php [L]
 
 # transaksi
 RewriteRule ^transaksi index.php?page=transaksi [L]

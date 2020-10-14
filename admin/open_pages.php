@@ -19,17 +19,43 @@ switch ($page) {
     if (!file_exists("pages/anggota/edit.php")) die($error);
     include "pages/anggota/edit.php";
     break;
-  
-  case 'view-anggota':
-    if(!file_exists("pages/anggota/view.php")) die($error);
-    include "pages/anggota/view.php";
-  break;
+
+  case 'hapus-anggota':
+    if (!file_exists("pages/anggota/actions.php")) die($error);
+    include "pages/anggota/actions.php";
+    break;
+
+    // case 'export-anggota':
+    //   if (!file_exists("pages/anggota/export.php")) die($error);
+    //   include "pages/anggota/export.php";
+    //   break;
+
+    // case 'view-anggota':
+    //   if(!file_exists("pages/anggota/view.php")) die($error);
+    //   include "pages/anggota/view.php";
+    // break;
 
     // Modul Buku
   case 'buku':
     if (!file_exists("pages/buku/index.php")) die($error);
     include "pages/buku/index.php";
     break;
+
+  case 'add-buku':
+    if (!file_exists("pages/buku/add.php")) die($error);
+    include "pages/buku/add.php";
+    break;
+
+  case 'edit-buku':
+    if (!file_exists("pages/buku/edit.php")) die($error);
+    include "pages/buku/edit.php";
+    break;
+
+  case 'hapus-buku':
+    if (!file_exists("pages/buku/actions.php")) die($error);
+    include "pages/buku/actions.php";
+    break;
+
 
     // Modul Transaksi
   case 'transaksi':
