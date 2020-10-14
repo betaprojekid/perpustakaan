@@ -15,6 +15,15 @@ switch ($page) {
     include "pages/anggota/add.php";
     break;
 
+  case 'edit-anggota':
+    if (!file_exists("pages/anggota/edit.php")) die($error);
+    include "pages/anggota/edit.php";
+    break;
+  
+  case 'view-anggota':
+    if(!file_exists("pages/anggota/view.php")) die($error);
+    include "pages/anggota/view.php";
+  break;
 
     // Modul Buku
   case 'buku':

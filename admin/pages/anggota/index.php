@@ -43,9 +43,9 @@
                 <td><?=$list['nama_lengkap']?></td>
                 <td><?=$list['prodi']?></td>
                 <td>
-                  <a href="#" class="btn bg-gradient-info btn-flat mr-1 btn-sm">View</a>
-                  <a href="#" class="btn bg-gradient-primary btn-flat mr-1 btn-sm">Edit</a>
-                  <a href="#" class="btn bg-gradient-danger btn-flat btn-sm">View</a>
+                  <a href="view-anggota/<?=$list['id']?>" class="btn bg-gradient-info btn-flat mr-1 btn-sm">View</a>
+                  <a href="edit-anggota/<?=$list['id']?>" class="btn bg-gradient-primary btn-flat mr-1 btn-sm">Edit</a>
+                  <a href="#" class="btn bg-gradient-danger btn-flat btn-sm">Delete</a>
                 </td>
               </tr>
               <?php

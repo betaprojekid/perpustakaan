@@ -9,6 +9,8 @@ RewriteEngine on
 # anggota
 RewriteRule ^anggota$ index.php?page=anggota [L]
 RewriteRule ^add-anggota$ index.php?page=add-anggota [L]
+RewriteRule ^edit-anggota/(.*)$ index.php?page=edit-anggota&id=$1 [L]
+RewriteRule ^view-anggota/(.*) index.php?page=view-anggota&id=$1 [L]
 
 
 # buku
