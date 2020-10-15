@@ -56,6 +56,11 @@ switch ($page) {
     include "pages/buku/actions.php";
     break;
 
+     // Modul kunjungan
+  case 'kunjungan':
+    if (!file_exists("pages/kunjungan/index.php")) die($error);
+    include "pages/kunjungan/index.php";
+    break;
 
     // Modul Transaksi
   case 'transaksi':
@@ -63,16 +68,25 @@ switch ($page) {
     include "pages/transaksi/index.php";
     break;
 
-    case 'add-transaksi':
-      if (!file_exists("pages/transaksi/add.php")) die($error);
-      include "pages/transaksi/add.php";
-      break;
-  
-    case 'edit-transaksi':
-      if (!file_exists("pages/transaksi/edit.php")) die($error);
-      include "pages/transaksi/edit.php";
-      break;
-  
+  case 'add-transaksi':
+    if (!file_exists("pages/transaksi/add.php")) die($error);
+    include "pages/transaksi/add.php";
+    break;
+
+  case 'edit-transaksi':
+    if (!file_exists("pages/transaksi/edit.php")) die($error);
+    include "pages/transaksi/edit.php";
+    break;
+
+  case 'perpanjang-transaksi':
+    if (!file_exists("pages/transaksi/actions.php")) die($error);
+    include "pages/transaksi/actions.php";
+    break;
+
+  case 'kembali-transaksi':
+    if (!file_exists("pages/transaksi/actions.php")) die($error);
+    include "pages/transaksi/actions.php";
+    break;
 
     // Modul laporan
   case 'laporan':

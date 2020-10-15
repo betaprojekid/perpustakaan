@@ -1,50 +1,48 @@
 fitur:
   ✔ menu login hanya untuk staff / admin @done (10/15/2020, 12:03:38 PM)
-  ☐ fitur anggota
+  ✔ fitur anggota @done (10/15/2020, 8:11:01 PM)
     ✔ daftar anggota @done(20-10-13 22:03)
     ✔ pencarian anggota @done(20-10-13 22:03)
     ✔ pencarian data(nim, nama, pinjaman buku, tagihan buku) @done(20-10-13 22:03)
     ✔ tambah @done(20-10-13 23:42)
     ✔ edit @done(20-10-14 22:19)
     ✔ delete @done(20-10-14 22:19)
-  ☐ pinjaman
-    ☐ pinjaman buku
-    ☐ pengembalian buku
-    ☐ keterlambatan
-    ☐ sanksi
-  ☐ fitur pengunjung
-    ☐ absensi nama dan nim
+  ✔ pinjaman @done (10/15/2020, 11:22:07 PM)
+    ✔ pinjaman buku @done (10/15/2020, 8:10:53 PM)
+    ✔ pengembalian buku @done (10/15/2020, 11:22:05 PM)
+    ✔ keterlambatan @done (10/15/2020, 11:22:06 PM)
+    ✔ sanksi @done (10/15/2020, 11:22:06 PM)
+  ✔ fitur pengunjung @done (10/15/2020, 11:59:18 PM)
+    ✔ absensi nama dan nim @fe @done (10/15/2020, 11:59:20 PM)
+    ✔ cek absensi @be @done (10/15/2020, 11:59:22 PM)
   ☐ fitur laporan
     ☐ laporan peminjaman
     ☐ laporan pengembalian
     ☐ laporan sanksi
     ☐ laporan kunjungan
       ☐ export laporan per hari/ per minggu/ per bulan ke excel
-  ☐ fitur buku
+  ✔ fitur buku @done (10/15/2020, 11:22:38 PM)
     ✔ pencarian @done(20-10-14 23:09)
     ✔ tambah @done(20-10-14 23:33)
     ✔ edit @done(20-10-14 23:50)
     ✔ delete @done(20-10-14 23:51)
     ✔ export @done(20-10-14 23:59)
-    ☐ buku yang sedang dipinjam
-    ☐ buku yang sudah dikembalikan
-    ☐ buku yang tersedia di perpus
-  ☐ fitur transaksi
-    ☐ data peminjam -> (nim dan nama otomatis muncul)
-    ☐ buku yang dipinjam
-    ☐ tgl dipinjam (ketika buku di pinjam maka buku akan berkurang sesuai stok buku)
-    ☐ tgl kembali (ketika buku di kembalikan buku akan bertambah sesuai stok buku)
-    ☐ sanksi
-  ☐ fitur user
+  ✔ fitur transaksi @done (10/15/2020, 11:59:34 PM)
+    ✔ data peminjam -> (nim dan nama otomatis muncul) @done (10/15/2020, 11:59:35 PM)
+    ✔ buku yang dipinjam @done (10/15/2020, 11:59:37 PM)
+    ✔ tgl dipinjam (ketika buku di pinjam maka buku akan berkurang sesuai stok buku) @done (10/15/2020, 11:59:38 PM)
+    ✔ tgl kembali (ketika buku di kembalikan buku akan bertambah sesuai stok buku) @done (10/15/2020, 11:59:39 PM)
+    ✔ sanksi @done (10/15/2020, 11:59:40 PM)
+  ✔ fitur user @done (10/15/2020, 11:59:40 PM)
     ✔ tambah @done (10/15/2020, 12:03:26 PM)
     ✔ edit @done (10/15/2020, 12:03:27 PM)
-    ☐ hapus
+    ✔ hapus @done (10/15/2020, 11:22:52 PM)
     ✔ list @done (10/15/2020, 12:03:28 PM)
-  ☐ modul pengaturan
+  ✔ modul pengaturan @done (10/15/2020, 11:59:42 PM)
     ✔ prodi @done(20-10-15 06:29)
     ✔ lokasi @done(20-10-15 06:47)
     ✔ kategori @done(20-10-15 06:40)
-    ☐ pengguna
+    ✔ pengguna @done (10/15/2020, 11:59:42 PM)
   ✔ autentikasi @done (10/15/2020, 12:03:23 PM)
     ✔ login @done (10/15/2020, 12:03:23 PM)
     ✔ logout @done (10/15/2020, 12:03:22 PM)

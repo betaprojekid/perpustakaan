@@ -28,13 +28,17 @@ RewriteRule ^admin/hapus-buku/(.*)$ admin/index.php?page=hapus-buku&act=delete&i
 RewriteRule ^admin/export-buku$ admin/pages/buku/export.php [L]
 
 # transaksi
-RewriteRule ^admin/transaksi admin/index.php?page=transaksi [L]
+RewriteRule ^admin/transaksi$ admin/index.php?page=transaksi [L]
 RewriteRule ^admin/add-transaksi$ admin/index.php?page=add-transaksi [L]
 RewriteRule ^admin/edit-transaksi/(.*)$ admin/index.php?page=edit-transaksi&id=$1 [L]
-RewriteRule ^admin/export-transaksi$ admin/pages/transaksi/export.php [L]
+RewriteRule ^admin/perpanjang-transaksi/(.*)$ admin/index.php?page=perpanjang-transaksi&act=perpanjang&id=$1 [L]
+RewriteRule ^admin/kembali-transaksi/(.*)$ admin/index.php?page=kembali-transaksi&act=kembali&id=$1 [L]
+
+# kunjungan
+RewriteRule ^admin/kunjungan$ admin/index.php?page=kunjungan [L]
 
 # laporan
-RewriteRule ^admin/laporan admin/index.php?page=laporan [L]
+RewriteRule ^admin/laporan$ admin/index.php?page=laporan [L]
 
 # pengaturan
 # prodi

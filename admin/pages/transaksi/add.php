@@ -27,7 +27,7 @@ $anggota_options = list_query($anggota_query);
 
           <div class="form-group">
             <label for="buku">Buku</label>
-            <select name="buku" id="buku" class="select-opsi" data-placeholder="Silahkan Pilih Buku">
+            <select name="buku" id="buku" class="form-control custom-select select-opsi" data-placeholder="Silahkan Pilih Buku">
               <?php foreach ($buku_options as $option) : ?>
                 <option value="<?= $option['id'] ?>"><?= $option['kode_buku'] . ' - ' . $option['judul'] . ' (Stok '  . $option['jumlah_buku'] . ')'?></option>
               <?php endforeach; ?>

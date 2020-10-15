@@ -47,10 +47,15 @@
                 <i class="nav-icon fas fa-table"></i>
                 <p>Transaksi</p>
               </a>
+            </li><li class="nav-item">
+              <a href="<?=base_url()?>/admin/kunjungan" class="nav-link">
+                <i class="nav-icon fas fa-map-marker-alt"></i>
+                <p>Kunjungan</p>
+              </a>
             </li>
             <li class="nav-item">
               <a href="<?=base_url()?>/admin/laporan" class="nav-link">
-                <i class="nav-icon fas fa-envelope"></i>
+                <i class="nav-icon far fa-chart-bar"></i>
                 <p>Laporan</p>
               </a>
             </li>

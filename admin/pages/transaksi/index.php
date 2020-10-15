@@ -16,44 +16,69 @@
             <thead>
               <tr>
                 <th>#</th>
-                <th>Username</th>
-                <th>Nama</th>
-                <th>Email</th>
-                <th>Level</th>
-                <th>Aktif</th>
-                <th>Aksi</th>
+                <th>Buku</th>
+                <th>Peminjam</th>
+                <th>Tanggal Peminjaman</th>
+                <th>Tanggal Berakhir</th>
+                <th>Tanggal Pengembalian</th>
+                <th>Status</th>
+                <th>Denda</th>
+                <th width="235px">Aksi</th>
               </tr>
             </thead>
             <tbody>
               <?php
               $no= 1;
               $query = "SELECT
-                            *
+                            transaksi.*,
+                            buku.judul,
+                            anggota.nama_lengkap
                         FROM
-                            users
+                            transaksi
+                        JOIN buku on buku.id = transaksi.buku_id
+                        JOIN anggota on anggota.id = transaksi.anggota_id
                         ORDER BY
-                          id
+                          transaksi.id
                         ASC";
               $lists = list_query($query);
               foreach($lists as $list):
               ?>
               <tr>
                 <td><?=$no++?></td>
-                <td><?=$list['username']?></td>
-                <td><?=$list['nama']?></td>
-                <td><?=$list['email']?></td>
-                <td><?=$list['level']?></td>
+                <td><?=$list['judul']?></td>
+                <td><?=$list['nama_lengkap']?></td>
+                <td><?=$list['tgl_pinjam']?></td>
+                <td><?=$list['tgl_berakhir']?></td>
+                <td><?=$list['tgl_kembali']?></td>
                 <td>
-                  <?php if($list['aktif'] === 'y'):?>
-                    <span class="badge badge-success">Aktif</span>
+                  <?php if($list['status'] === 'pinjam'):?>
+                    <span class="badge badge-warning">Pinjam</span>
                   <?php else:?>
-                    <span class="badge badge-warning">Non-aktif</span>
+                    <span class="badge badge-success">Kembali</span>
                   <?php endif;?>
                 </td>
                 <td>
+                  <?=(($list['denda'])??'-')?>
+                  <?php
+                  // bandingkan tanggal berakhir dengan hari ini
+                  // jika telat maka kurangkan tanggal hari ini dgn tgl berakhir
+                  // kalikan hasil dengan 500
+                  ?>
+                </td>
+                <td>
                   <a href="edit-transaksi/<?=$list['id']?>" class="btn btn-info mr-1 btn-sm">Ubah</a>
-                  <a href="#" class="btn btn-success mr-1 btn-sm">Perpanjang</a>
-                  <a href="hapus-transaksi/<?=$list['id']?>" class="btn btn-danger btn-sm" onclick="return confirm('anda yaking ingin menghapus data ini!')">Kembalikan</a>
+                  <?php
+                  $sekarang = date('y-m-d'); 
+                  $tgl_berakhir = date('y-m-d', strtotime($list['tgl_berakhir']));
+                  if($sekarang <= $tgl_berakhir && $list['status'] === 'pinjam'):
+                  ?>
+                    <a href="perpanjang-transaksi/<?=$list['id']?>" class="btn btn-success mr-1 btn-sm">Perpanjang</a>
+                  <?php
+                  endif;
+                  
+                  if($list['status'] === 'pinjam'): ?>
+                  <a href="kembali-transaksi/<?=$list['id']?>" class="btn btn-danger btn-sm">Kembalikan</a>
+                  <?php endif;?>
                 </td>
               </tr>
               <?php

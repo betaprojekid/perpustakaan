@@ -1,5 +1,6 @@
 <?php
-include 'helpers/base_url.php';
+require $_SERVER['DOCUMENT_ROOT'] . "/perpustakaan/config/connection.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/perpustakaan/helpers/helper.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,36 +28,45 @@ include 'helpers/base_url.php';
     <div class="lockscreen-logo">
       <a href="#"><b>Perpustakaan</b> - SMK Negeri 7 Medan</a>
     </div>
-    <!-- User name -->
-    <div class="lockscreen-name">Absensi</div>
 
-    <!-- START LOCK SCREEN ITEM -->
-    <div class="lockscreen-item">
-      <!-- lockscreen image -->
-      <div class="lockscreen-image">
-        <img src="assets/img/user.png">
-      </div>
-      <!-- /.lockscreen-image -->
+    <div class="card shadow">
+      <div class="card-body login-card-body">
+        <h4 class="login-box-msg"><b>Form Pengunjung</b></h4>
 
-      <!-- lockscreen credentials (contains the form) -->
-      <form class="lockscreen-credentials" method="POST" action="">
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Masukkan NIS" required>
-
-          <div class="input-group-append">
-            <button type="button" class="btn"><i class="fas fa-arrow-right text-muted"></i></button>
+        <form action="actions.php" method="POST" autocomplete="off">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Nomor Induk Mahasiswa" name="nim" required>
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="far fa-id-card"></span>
+              </div>
+            </div>
           </div>
-        </div>
-      </form>
-      <!-- /.lockscreen credentials -->
-
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Nama Lengkap" name="nama" required>
+            <div class="input-group-append">
+              <div class="input-group-text">
+                <span class="fas fa-user"></span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- /.col -->
+            <div class="col">
+              <button type="submit" class="btn btn-primary btn-block" name="simpan">Simpan</button>
+            </div>
+            <!-- /.col -->
+          </div>
+        </form>
+      </div>
+      <!-- /.login-card-body -->
     </div>
-    <!-- /.lockscreen-item -->
     <div class="help-block text-center">
-      Masukkan NIM (Nomor Induk Siswa) Anda sebagai bukti absensi anda
+      Masukkan NIM (Nomor Induk Siswa) Anda dan Nama Lengkap 
+      Anda  sebagai bukti absensi anda
     </div>
     <div class="text-center mt-4">
-      <a href="<?= base_url('login')?>">Masuk sebagai Staff Perpustakaan</a>
+      <a href="<?= base_url('login') ?>">Masuk sebagai Staff Perpustakaan</a>
     </div>
   </div>
   <!-- /.center -->

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 15, 2020 at 12:20 PM
+-- Generation Time: Oct 15, 2020 at 07:00 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -173,9 +173,9 @@ CREATE TABLE `buku` (
 INSERT INTO `buku` (`id`, `kategori_id`, `lokasi_buku_id`, `kode_buku`, `judul`, `pengarang`, `penerbit`, `tahun_terbit`, `isbn`, `jumlah_buku`, `updated_at`, `created_at`) VALUES
 (1, 1, 1, '23702', 'Ullam nihil vero aspernatur ad voluptas reiciendis rerum.', 'Emmy Macejkovic', 'PLC', 1988, '1160-78-76', 3, '2020-02-12 15:44:48', '2020-09-03 07:45:29'),
 (2, 2, 2, '52637', 'Aliquid dolor maxime nihil vitae eligendi.', 'Prof. Sabryna Grady MD', 'LLC', 1981, '5363-91-77', 2, '2020-03-26 20:39:56', '2020-05-23 17:13:14'),
-(3, 3, 3, '48543', 'Vel iusto qui nulla ut excepturi omnis.', 'Robb Davis', 'LLC', 2006, '2077-62-24', -1, '2020-03-14 03:00:28', '2020-08-19 11:32:21'),
+(3, 3, 3, '48543', 'Vel iusto qui nulla ut excepturi omnis.', 'Robb Davis', 'LLC', 2006, '2077-62-24', 2, '2020-10-15 23:21:39', '2020-08-19 11:32:21'),
 (4, 4, 4, '40261', 'Eos adipisci omnis esse sit.', 'June Wehner', 'and Sons', 1995, '3961-83-66', 2, '2019-11-10 13:08:23', '2019-12-14 18:17:56'),
-(5, 5, 5, '05088', 'Laborum quia similique ullam cum odit.', 'Dr. Bella Nikolaus II', 'LLC', 1990, '9029-38-19', 4, '2020-09-13 04:46:57', '2019-10-15 23:06:28'),
+(5, 5, 5, '05088', 'Laborum quia similique ullam cum odit.', 'Dr. Bella Nikolaus II', 'LLC', 1990, '9029-38-19', 3, '2020-09-13 04:46:57', '2019-10-15 23:06:28'),
 (6, 6, 1, '87786', 'Ad est cupiditate quidem libero facilis ut autem.', 'Alvah Corkery DDS', 'PLC', 2009, '0582-65-33', 2, '2020-07-08 18:52:42', '2020-05-01 11:55:56'),
 (7, 7, 2, '55091', 'Ut commodi quia distinctio illo rem assumenda facilis sunt.', 'Everette McGlynn', 'PLC', 1986, '4205-54-82', 6, '2020-05-26 12:12:20', '2020-03-27 00:44:49'),
 (8, 8, 3, '73773', 'Non dolor omnis sint reprehenderit corrupti.', 'Kaycee Lockman', 'PLC', 1971, '1047-49-75', 1, '2020-06-09 17:11:09', '2019-12-28 17:11:29'),
@@ -187,7 +187,7 @@ INSERT INTO `buku` (`id`, `kategori_id`, `lokasi_buku_id`, `kode_buku`, `judul`,
 (14, 2, 4, '66195', 'Itaque dignissimos vel omnis aut rerum modi ab.', 'Mr. Bradley Cummerata Jr.', 'PLC', 1975, '1355-40-05', 2, '2020-03-21 11:37:31', '2020-09-24 01:44:31'),
 (15, 3, 5, '14700', 'Tempora reprehenderit dolores debitis sunt ut.', 'Dr. Electa Bartoletti Sr.', 'LLC', 2014, '6328-69-74', 4, '2020-07-07 08:03:15', '2019-10-20 04:49:01'),
 (16, 4, 1, '78053', 'Maiores voluptatum et modi eligendi voluptatem.', 'Josephine Moore', 'Group', 1982, '4748-61-09', 0, '2019-10-20 01:53:47', '2020-03-21 07:12:50'),
-(17, 5, 2, '95265', 'Voluptates ipsa laborum facere fugit veritatis.', 'Jerrold Kshlerin', 'Ltd', 2000, '5528-89-01', 5, '2019-11-15 04:20:01', '2020-09-23 13:31:41'),
+(17, 5, 2, '95265', 'Voluptates ipsa laborum facere fugit veritatis.', 'Jerrold Kshlerin', 'Ltd', 2000, '5528-89-01', 5, '2020-10-15 23:23:42', '2020-09-23 13:31:41'),
 (18, 6, 3, '60254', 'Possimus porro quia commodi.', 'Maya Schultz', 'Ltd', 1983, '3332-86-24', 0, '2019-12-08 21:40:10', '2020-01-10 22:21:39'),
 (19, 7, 4, '49212', 'Dolore sit et aperiam qui.', 'Norberto Considine Jr.', 'Ltd', 1994, '0625-26-08', 1, '2020-05-22 16:13:30', '2020-07-27 17:40:53'),
 (20, 8, 5, '76144', 'Iusto corrupti quod illo ut voluptatem.', 'Gertrude Bartell MD', 'Ltd', 2014, '8450-10-87', 6, '2020-09-09 12:15:29', '2019-11-07 07:59:05'),
@@ -234,7 +234,7 @@ INSERT INTO `buku` (`id`, `kategori_id`, `lokasi_buku_id`, `kode_buku`, `judul`,
 (61, 1, 1, '48548', 'Accusantium sint similique iure quae eveniet sapiente quibusdam.', 'Prof. Giovani Shanahan I', 'and Sons', 1982, '3418-79-54', 2, '2019-12-27 03:42:30', '2020-06-29 18:44:42'),
 (62, 2, 2, '93691', 'Est consequatur harum a rerum fugit expedita.', 'Marilyne Schmeler Sr.', 'LLC', 2004, '1130-53-00', 7, '2020-04-21 22:10:07', '2020-03-02 16:00:38'),
 (63, 3, 3, '32058', 'Et blanditiis officia qui dolores nobis.', 'Kaylah Moore', 'Inc', 2002, '3786-58-73', 8, '2020-05-19 08:19:43', '2020-09-03 02:36:37'),
-(64, 4, 4, '53630', 'A sint veniam similique consequatur ipsa fuga sint illo.', 'Emelia O\'Keefe I', 'and Sons', 2013, '3641-19-10', 4, '2019-12-15 07:30:14', '2020-05-22 16:16:09'),
+(64, 4, 4, '53630', 'A sint veniam similique consequatur ipsa fuga sint illo.', 'Emelia O\'Keefe I', 'and Sons', 2013, '3641-19-10', 3, '2019-12-15 07:30:14', '2020-05-22 16:16:09'),
 (65, 5, 5, '31528', 'A architecto commodi labore.', 'Wayne O\'Connell', 'LLC', 2003, '4154-49-29', 6, '2020-03-12 10:01:11', '2019-12-30 20:39:17'),
 (66, 6, 1, '77975', 'Est qui fuga at est.', 'Prof. Zoila Emard', 'Ltd', 2005, '7043-05-73', 5, '2020-08-30 04:54:25', '2020-01-02 19:45:20'),
 (67, 7, 2, '37297', 'Id et quas repellat aut pariatur sit tempora aut.', 'Cydney Torphy', 'LLC', 1981, '0922-47-86', 5, '2019-11-10 15:42:39', '2020-06-28 12:37:51'),
@@ -252,12 +252,12 @@ INSERT INTO `buku` (`id`, `kategori_id`, `lokasi_buku_id`, `kode_buku`, `judul`,
 (79, 7, 4, '43585', 'Quasi aut nobis voluptatem sint corrupti quo provident.', 'Bonita Hane DVM', 'PLC', 1983, '5012-39-99', 4, '2020-07-06 04:23:18', '2020-06-08 14:57:39'),
 (80, 8, 5, '89277', 'Sunt tempore reprehenderit et officiis.', 'Wyman Zemlak', 'and Sons', 1976, '6896-64-81', 8, '2019-10-26 09:04:17', '2019-11-09 06:59:24'),
 (81, 9, 1, '20096', 'Mollitia dolor tempore necessitatibus sint.', 'Prof. Camden Glover', 'LLC', 2008, '1238-95-88', 8, '2020-08-25 19:23:03', '2020-02-09 22:07:28'),
-(82, 10, 2, '60221', 'Inventore et eos reiciendis non perspiciatis.', 'Dr. Delilah Breitenberg I', 'Ltd', 2001, '9871-75-36', 7, '2019-12-11 20:24:54', '2020-06-28 13:20:24'),
+(82, 10, 2, '60221', 'Inventore et eos reiciendis non perspiciatis.', 'Dr. Delilah Breitenberg I', 'Ltd', 2001, '9871-75-36', 6, '2019-12-11 20:24:54', '2020-06-28 13:20:24'),
 (83, 11, 3, '41573', 'Porro voluptates expedita laudantium quo.', 'Fletcher Quigley', 'Group', 1997, '7602-44-28', 8, '2019-12-13 17:13:53', '2020-08-19 11:20:35'),
 (84, 12, 4, '01750', 'Nam architecto voluptates quasi voluptates ipsa repellendus.', 'Fritz Pfannerstill Jr.', 'LLC', 1971, '3877-52-03', 6, '2019-12-10 12:40:33', '2020-03-25 13:45:11'),
 (85, 1, 5, '34572', 'Iusto eos sint vel commodi id recusandae autem.', 'Dr. Frida Mann IV', 'LLC', 1991, '2235-86-61', 7, '2020-04-28 00:12:01', '2020-08-24 16:16:47'),
 (86, 2, 1, '86421', 'Reiciendis nisi laudantium aut et et amet non dolor.', 'Ernest Zieme', 'LLC', 2013, '7820-32-93', 1, '2020-02-01 13:09:00', '2020-08-24 21:45:57'),
-(87, 3, 2, '49547', 'Labore veniam aliquid recusandae eum aspernatur doloribus.', 'Prof. Gino Veum DDS', 'PLC', 1972, '3505-19-82', 4, '2020-02-03 19:17:48', '2020-06-10 14:45:58'),
+(87, 3, 2, '49547', 'Labore veniam aliquid recusandae eum aspernatur doloribus.', 'Prof. Gino Veum DDS', 'PLC', 1972, '3505-19-82', 3, '2020-02-03 19:17:48', '2020-06-10 14:45:58'),
 (88, 4, 3, '74893', 'Et autem modi ut tempore impedit in facere.', 'Katheryn Wolf', 'Group', 2001, '8707-24-77', 3, '2020-05-28 08:20:56', '2019-10-20 21:23:40'),
 (89, 5, 4, '13014', 'Odio neque molestiae corporis sunt dolore illo molestiae.', 'Kobe Strosin', 'LLC', 2002, '0362-97-48', 5, '2020-02-11 01:57:18', '2020-02-24 12:39:07'),
 (90, 6, 5, '96696', 'Beatae consequatur odio tempore.', 'Miss Lessie Rowe', 'and Sons', 1995, '9545-75-23', 2, '2020-05-23 20:00:07', '2019-12-12 09:37:21'),
@@ -269,8 +269,7 @@ INSERT INTO `buku` (`id`, `kategori_id`, `lokasi_buku_id`, `kode_buku`, `judul`,
 (96, 12, 1, '13328', 'Sapiente quas vero et excepturi.', 'Arne O\'Connell', 'PLC', 1978, '7596-73-69', 1, '2019-12-19 20:39:45', '2020-06-19 08:57:14'),
 (97, 1, 2, '12308', 'Alias ea cupiditate corporis sit.', 'Dr. Favian Parker', 'PLC', 2000, '4770-44-11', 2, '2020-02-05 23:41:06', '2020-04-11 04:05:52'),
 (98, 2, 3, '23107', 'Reiciendis sit magni nihil accusamus et.', 'Josie Wiza', 'and Sons', 2011, '8858-63-81', 7, '2019-11-21 04:57:28', '2020-07-14 08:41:28'),
-(99, 3, 4, '33839', 'Consequuntur assumenda autem in.', 'Niko Blick', 'and Sons', 2003, '2181-70-49', 3, '2020-04-18 07:13:12', '2020-04-09 10:04:14'),
-(100, 4, 5, '54724', 'Quia iure totam numquam natus.', 'Minnie Hettinger', 'Inc', 2013, '7259-34-14', 8, '2020-03-31 11:12:02', '2020-07-09 00:58:42');
+(99, 3, 4, '33839', 'Consequuntur assumenda autem in.', 'Niko Blick', 'and Sons', 2003, '2181-70-49', 3, '2020-04-18 07:13:12', '2020-04-09 10:04:14');
 
 -- --------------------------------------------------------
 
@@ -305,6 +304,28 @@ INSERT INTO `kategori` (`id`, `kategori`, `created_at`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `kunjungan`
+--
+
+CREATE TABLE `kunjungan` (
+  `id` int(11) NOT NULL,
+  `nim` varchar(16) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `nama` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `kunjungan`
+--
+
+INSERT INTO `kunjungan` (`id`, `nim`, `nama`, `created_at`) VALUES
+(1, '1225555', 'nadiah siagian', '2020-10-15 23:51:30'),
+(2, '6566222', 'azhari panggabean', '2020-10-15 23:51:46'),
+(3, '33362', 'binsar sitomput', '2020-10-15 23:51:57');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `lokasi_buku`
 --
 
@@ -325,18 +346,6 @@ INSERT INTO `lokasi_buku` (`id`, `kode`, `lokasi`, `created_at`) VALUES
 (3, 'R3', 'Rak 3', '2020-10-13 16:25:38'),
 (4, 'R4', 'Rak 4', '2020-10-13 16:25:38'),
 (5, 'R5', 'Rak 5', '2020-10-13 16:25:38');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pengunjung`
---
-
-CREATE TABLE `pengunjung` (
-  `id` int(11) NOT NULL,
-  `anggota_id` int(11) NOT NULL,
-  `kunjungan` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -387,7 +396,13 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`id`, `buku_id`, `anggota_id`, `tgl_pinjam`, `tgl_berakhir`, `tgl_kembali`, `status`, `denda`, `keterangan`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, '2020-10-15', '2020-10-22', NULL, 'pinjam', NULL, NULL, '2020-10-15 17:13:04', NULL);
+(1, 1, 1, '2020-10-01', '2020-10-07', NULL, 'pinjam', NULL, '', '2020-10-15 17:13:04', NULL),
+(2, 3, 4, '2020-10-01', '2020-10-07', '2020-10-15', 'kembali', '4000', 'terkena denda karena telat 8 hari', '2020-10-15 19:54:04', '2020-10-15 23:21:39'),
+(3, 5, 7, '2020-10-01', '2020-10-14', NULL, 'pinjam', NULL, '', '2020-10-15 19:54:19', NULL),
+(4, 17, 13, '2020-10-07', '2020-10-22', '2020-10-15', 'kembali', '0', '', '2020-10-15 19:54:34', '2020-10-15 23:23:42'),
+(5, 64, 57, '2020-10-10', '2020-10-24', NULL, 'pinjam', NULL, NULL, '2020-10-15 19:54:47', NULL),
+(6, 82, 72, '2020-10-10', '2020-10-17', NULL, 'pinjam', NULL, NULL, '2020-10-15 19:54:58', NULL),
+(7, 87, 5, '2020-10-10', '2020-10-17', NULL, 'pinjam', NULL, NULL, '2020-10-15 19:55:10', NULL);
 
 -- --------------------------------------------------------
 
@@ -440,6 +455,12 @@ ALTER TABLE `buku`
 -- Indexes for table `kategori`
 --
 ALTER TABLE `kategori`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `kunjungan`
+--
+ALTER TABLE `kunjungan`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -497,6 +518,12 @@ ALTER TABLE `kategori`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
+-- AUTO_INCREMENT for table `kunjungan`
+--
+ALTER TABLE `kunjungan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
 -- AUTO_INCREMENT for table `lokasi_buku`
 --
 ALTER TABLE `lokasi_buku`
@@ -512,7 +539,7 @@ ALTER TABLE `prodi`
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `users`

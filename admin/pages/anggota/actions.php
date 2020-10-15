@@ -78,6 +78,16 @@ if(isset($_POST['add'])){
 }elseif(isset($_GET['act']) && $_GET['act'] === 'delete'){
   $id = $_GET['id'];
 
+  if($_SESSION['user']['id'] === $id){
+    echo "
+            <script>
+                alert('anda tidak dapat menghapus diri anda sendiri');
+                document.location.href = '".$path."';
+            </script>
+        ";
+        exit;
+  }
+
   // echo 'id ' . $id . ' mau di hapus gak !';
   // die();
   $query = "DELETE
