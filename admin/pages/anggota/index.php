@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col">
-    <div class="card">
+    <div class="card shadow">
       <div class="card-header bg-primary">
         <h2 class="card-title">Data Anggota</h2>
       </div>

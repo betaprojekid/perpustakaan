@@ -69,7 +69,76 @@ switch ($page) {
     include "pages/laporan/index.php";
     break;
 
+
     // Modul Pengaturan
+    // prodi
+  case 'prodi':
+    if (!file_exists("pages/prodi/index.php")) die($error);
+    include "pages/prodi/index.php";
+    break;
+
+  case 'add-prodi':
+    if (!file_exists("pages/prodi/add.php")) die($error);
+    include "pages/prodi/add.php";
+    break;
+
+  case 'edit-prodi':
+    if (!file_exists("pages/prodi/edit.php")) die($error);
+    include "pages/prodi/edit.php";
+    break;
+
+    // kategori
+  case 'kategori':
+    if (!file_exists("pages/kategori/index.php")) die($error);
+    include "pages/kategori/index.php";
+    break;
+
+  case 'add-kategori':
+    if (!file_exists("pages/kategori/add.php")) die($error);
+    include "pages/kategori/add.php";
+    break;
+
+  case 'edit-kategori':
+    if (!file_exists("pages/kategori/edit.php")) die($error);
+    include "pages/kategori/edit.php";
+    break;
+
+    // lokasi
+  case 'lokasi':
+    if (!file_exists("pages/lokasi/index.php")) die($error);
+    include "pages/lokasi/index.php";
+    break;
+
+  case 'add-lokasi':
+    if (!file_exists("pages/lokasi/add.php")) die($error);
+    include "pages/lokasi/add.php";
+    break;
+
+  case 'edit-lokasi':
+    if (!file_exists("pages/lokasi/edit.php")) die($error);
+    include "pages/lokasi/edit.php";
+    break;
+
+    // pengguna
+  case 'pengguna':
+    if (!file_exists("pages/pengguna/index.php")) die($error);
+    include "pages/pengguna/index.php";
+    break;
+
+  case 'add-pengguna':
+    if (!file_exists("pages/pengguna/add.php")) die($error);
+    include "pages/pengguna/add.php";
+    break;
+
+  case 'edit-pengguna':
+    if (!file_exists("pages/pengguna/edit.php")) die($error);
+    include "pages/pengguna/edit.php";
+    break;
+
+  case 'hapus-pengguna':
+    if (!file_exists("pages/pengguna/actions.php")) die($error);
+    include "pages/pengguna/actions.php";
+    break;
 
 
     // dashboard

@@ -65,25 +65,25 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="<?=base_url()?>/admin/prodi" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Program Studi</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="<?=base_url()?>/admin/lokasi" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Lokasi/Rak</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="<?=base_url()?>/admin/kategori" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Kategori Buku</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="<?=base_url()?>/admin/pengguna" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Pengguna</p>
                   </a>
