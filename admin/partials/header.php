@@ -1,9 +1,3 @@
-<?php
-require_once "../config/connection.php";
-include_once "../helpers/helper.php";
-
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -36,6 +30,9 @@ include_once "../helpers/helper.php";
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- datatables -->
   <link rel="stylesheet" href="<?= base_url()?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <!-- select2js -->
+  <link rel="stylesheet" href="<?= base_url()?>/plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="<?= base_url()?>plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">

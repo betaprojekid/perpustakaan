@@ -1,10 +1,14 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
 
-#autentikasi
-# RewriteRule ^login$ login.php [L]
+RewriteRule ^login$ admin/autentikasi/login.php [L]
 
-# tampilan
+# Custom error page for error 403, 404 and 500
+# silahkan ganti urlnya jika pada path atau domian
+ErrorDocument 404 http://localhost/perpustakaan/404.php
+ErrorDocument 500 http://localhost/perpustakaan/404.php
+
+# dashboard
 
 # anggota
 RewriteRule ^anggota$ index.php?page=anggota [L]

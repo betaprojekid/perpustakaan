@@ -1,4 +1,10 @@
 <?php
+require_once "../config/connection.php";
+include_once "../helpers/helper.php";
+
+// autentikasi
+require "autentikasi/autentikasi.php";
+
 include_once 'partials/header.php';
 include_once 'partials/navbar.php';
 include_once 'partials/sidebar.php';

@@ -16,6 +16,7 @@
             <thead>
               <tr>
                 <th>#</th>
+                <th>Kode</th>
                 <th>lokasi</th>
                 <th>Aksi</th>
               </tr>

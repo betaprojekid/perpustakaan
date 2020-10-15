@@ -1,20 +1,62 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
 
-RewriteRule login$ admin/autentikasi/login.php [L]
-#autentikasi
-# tampilan
-# dashbord
-# anggota
-# buku
-# transaksi
-# laporan
-# pengaturan
+RewriteRule ^login$ admin/autentikasi/login.php [L]
+RewriteRule ^logout$ admin/autentikasi/logout.php [L]
 
 # Custom error page for error 403, 404 and 500
 # silahkan ganti urlnya jika pada path atau domian
 ErrorDocument 404 http://localhost/perpustakaan/404.php
 ErrorDocument 500 http://localhost/perpustakaan/404.php
+
+# dashboard
+
+# anggota
+RewriteRule ^admin/anggota$ admin/index.php?page=anggota [L]
+RewriteRule ^admin/add-anggota$ admin/index.php?page=add-anggota [L]
+RewriteRule ^admin/edit-anggota/(.*)$ admin/index.php?page=edit-anggota&id=$1 [L]
+RewriteRule ^admin/hapus-anggota/(.*)$ admin/index.php?page=hapus-anggota&act=delete&id=$1 [L]
+RewriteRule ^admin/export-anggota$ admin/pages/anggota/export.php [L]
+# RewriteRule ^admin/view-anggota/(.*) index.php?page=view-anggota&id=$1 [L]
+
+
+# buku
+RewriteRule ^admin/buku$ admin/index.php?page=buku [L]
+RewriteRule ^admin/add-buku$ admin/index.php?page=add-buku [L]
+RewriteRule ^admin/edit-buku/(.*)$ admin/index.php?page=edit-buku&id=$1 [L]
+RewriteRule ^admin/hapus-buku/(.*)$ admin/index.php?page=hapus-buku&act=delete&id=$1 [L]
+RewriteRule ^admin/export-buku$ admin/pages/buku/export.php [L]
+
+# transaksi
+RewriteRule ^admin/transaksi admin/index.php?page=transaksi [L]
+RewriteRule ^admin/add-transaksi$ admin/index.php?page=add-transaksi [L]
+RewriteRule ^admin/edit-transaksi/(.*)$ admin/index.php?page=edit-transaksi&id=$1 [L]
+RewriteRule ^admin/export-transaksi$ admin/pages/transaksi/export.php [L]
+
+# laporan
+RewriteRule ^admin/laporan admin/index.php?page=laporan [L]
+
+# pengaturan
+# prodi
+RewriteRule ^admin/prodi$ admin/index.php?page=prodi [L]
+RewriteRule ^admin/add-prodi$ admin/index.php?page=add-prodi [L]
+RewriteRule ^admin/edit-prodi/(.*)$ admin/index.php?page=edit-prodi&id=$1 [L]
+
+# kategori
+RewriteRule ^admin/kategori$ admin/index.php?page=kategori [L]
+RewriteRule ^admin/add-kategori$ admin/index.php?page=add-kategori [L]
+RewriteRule ^admin/edit-kategori/(.*)$ admin/index.php?page=edit-kategori&id=$1 [L]
+
+# lokasi
+RewriteRule ^admin/lokasi$ admin/index.php?page=lokasi [L]
+RewriteRule ^admin/add-lokasi$ admin/index.php?page=add-lokasi [L]
+RewriteRule ^admin/edit-lokasi/(.*)$ admin/index.php?page=edit-lokasi&id=$1 [L]
+
+# pengguna
+RewriteRule ^admin/pengguna$ admin/index.php?page=pengguna [L]
+RewriteRule ^admin/add-pengguna$ admin/index.php?page=add-pengguna [L]
+RewriteRule ^admin/edit-pengguna/(.*)$ admin/index.php?page=edit-pengguna&id=$1 [L]
+RewriteRule ^admin/hapus-pengguna/(.*)$ admin/index.php?page=hapus-pengguna&act=delete&id=$1 [L]
 
 Options All -Indexes
 </IfModule>

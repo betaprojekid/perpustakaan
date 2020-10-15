@@ -1,6 +1,14 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'] . "/perpustakaan/config/connection.php";
 require $_SERVER['DOCUMENT_ROOT'] . "/perpustakaan/helpers/helper.php";
+
+$action = base_url('admin/autentikasi/verifikasi.php');
+$admin = base_url('admin');
+
+if(isset($_SESSION['user'])){
+  header("location:" . $admin);
+  exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +44,9 @@ require $_SERVER['DOCUMENT_ROOT'] . "/perpustakaan/helpers/helper.php";
       <div class="card-body login-card-body">
         <p class="login-box-msg">Masukkan <b>username</b> dan <b>password</b></p>
 
-        <form action="#" method="post">
+        <form action="<?=$action?>" method="POST">
           <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Your Username">
+            <input type="text" class="form-control" placeholder="Your Username" name="username" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-envelope"></span>
@@ -46,7 +54,7 @@ require $_SERVER['DOCUMENT_ROOT'] . "/perpustakaan/helpers/helper.php";
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="password" class="form-control" placeholder="Your Password">
+            <input type="password" class="form-control" placeholder="Your Password" name="password" required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>
@@ -56,7 +64,7 @@ require $_SERVER['DOCUMENT_ROOT'] . "/perpustakaan/helpers/helper.php";
           <div class="row">
             <!-- /.col -->
             <div class="col-4">
-              <button type="submit" class="btn btn-primary btn-block">Login</button>
+              <button type="submit" class="btn btn-primary btn-block" name="login">Login</button>
             </div>
             <div class="col-8 d-flex align-items-center justify-content-end">
               <a href="<?=base_url()?>" class="text-danger">Kembali</a>

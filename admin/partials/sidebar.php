@@ -14,7 +14,7 @@
           </div>
         </div>
         <div class="info text-center">
-          <h4 class="text-white">Administrator</h4>
+          <h4 class="text-white"><?= $_SESSION['user']['nama']?></h4>
         </div>
         <hr>
 

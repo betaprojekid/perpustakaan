@@ -63,6 +63,17 @@ switch ($page) {
     include "pages/transaksi/index.php";
     break;
 
+    case 'add-transaksi':
+      if (!file_exists("pages/transaksi/add.php")) die($error);
+      include "pages/transaksi/add.php";
+      break;
+  
+    case 'edit-transaksi':
+      if (!file_exists("pages/transaksi/edit.php")) die($error);
+      include "pages/transaksi/edit.php";
+      break;
+  
+
     // Modul laporan
   case 'laporan':
     if (!file_exists("pages/laporan/index.php")) die($error);

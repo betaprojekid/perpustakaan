@@ -51,6 +51,17 @@
       });
     })
   </script>
+
+  <!-- select2js -->
+  <script src="<?=base_url()?>/plugins/select2/js/select2.full.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.select-opsi').select2({
+        theme: "classic",
+        allowClear: true
+      });
+    });
+  </script>
 </body>
 
 </html>

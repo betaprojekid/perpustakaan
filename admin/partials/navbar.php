@@ -4,7 +4,7 @@
 <!-- Right navbar links -->
 <ul class="navbar-nav ml-auto">
   <li class="nav-item">
-    <a href="#" class="nav-link btn btn-danger">Logout</a>
+    <a href="<?=base_url()?>/logout" class="nav-link btn btn-danger">Logout</a>
   </li>
 </ul>
 </nav>

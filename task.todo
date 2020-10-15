@@ -1,5 +1,5 @@
 fitur:
-  ☐ menu login hanya untuk staff / admin
+  ✔ menu login hanya untuk staff / admin @done (10/15/2020, 12:03:38 PM)
   ☐ fitur anggota
     ✔ daftar anggota @done(20-10-13 22:03)
     ✔ pencarian anggota @done(20-10-13 22:03)
@@ -36,15 +36,20 @@ fitur:
     ☐ tgl kembali (ketika buku di kembalikan buku akan bertambah sesuai stok buku)
     ☐ sanksi
   ☐ fitur user
-    ☐ tambah
-    ☐ edit
+    ✔ tambah @done (10/15/2020, 12:03:26 PM)
+    ✔ edit @done (10/15/2020, 12:03:27 PM)
     ☐ hapus
-    ☐ list
+    ✔ list @done (10/15/2020, 12:03:28 PM)
   ☐ modul pengaturan
     ✔ prodi @done(20-10-15 06:29)
     ✔ lokasi @done(20-10-15 06:47)
     ✔ kategori @done(20-10-15 06:40)
     ☐ pengguna
+  ✔ autentikasi @done (10/15/2020, 12:03:23 PM)
+    ✔ login @done (10/15/2020, 12:03:23 PM)
+    ✔ logout @done (10/15/2020, 12:03:22 PM)
+    ✔ verifikasi @done (10/15/2020, 12:03:22 PM)
+    ✔ autentikasi @done (10/15/2020, 12:03:21 PM)
 
 Database:
   ✔ angota @done(20-10-13 07:40)
