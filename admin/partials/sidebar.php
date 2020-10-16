@@ -10,54 +10,91 @@
         <!-- Sidebar user panel (optional) -->
         <div class="mt-3 pb-3 mb-3 d-flex justify-content-center">
           <div class="image">
-            <img src="<?= base_url()?>/assets/img/user.png" class="img-circle elevation-2" alt="User Image">
+            <img src="<?= base_url() ?>/assets/img/user.png" class="img-circle elevation-2" alt="User Image">
           </div>
         </div>
         <div class="info text-center">
-          <h4 class="text-white"><?= $_SESSION['user']['nama']?></h4>
+          <h4 class="text-white"><?= $_SESSION['user']['nama'] ?></h4>
         </div>
         <hr>
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu"
-            data-accordion="false">
+          <ul class="nav nav-pills nav-sidebar flex-column nav-flat" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a href="<?=base_url()?>/admin" class="nav-link">
+              <a href="<?= base_url() ?>/admin" class="nav-link">
                 <i class="nav-icon fas fa-laptop"></i>
                 <p>Home</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?=base_url()?>/admin/anggota" class="nav-link">
+              <a href="<?= base_url() ?>/admin/anggota" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
                 <p>Data Anggota</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?=base_url()?>/admin/buku" class="nav-link">
+              <a href="<?= base_url() ?>/admin/buku" class="nav-link">
                 <i class="nav-icon fas fa-book"></i>
                 <p>Data Buku</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="<?=base_url()?>/admin/transaksi" class="nav-link">
+              <a href="<?= base_url() ?>/admin/transaksi" class="nav-link">
                 <i class="nav-icon fas fa-table"></i>
                 <p>Transaksi</p>
               </a>
-            </li><li class="nav-item">
-              <a href="<?=base_url()?>/admin/kunjungan" class="nav-link">
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url() ?>/admin/kunjungan" class="nav-link">
                 <i class="nav-icon fas fa-map-marker-alt"></i>
                 <p>Kunjungan</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="<?=base_url()?>/admin/laporan" class="nav-link">
+            <!-- <li class="nav-item">
+              <a href="<?= base_url() ?>/admin/laporan" class="nav-link">
                 <i class="nav-icon far fa-chart-bar"></i>
                 <p>Laporan</p>
               </a>
+            </li> -->
+
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon far fa-chart-bar"></i>
+                <p>
+                  Laporan
+                  <i class="fas fa-angle-left right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>/admin/laporan-peminjaman" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Laporan Peminjaman</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>/admin/laporan-pengembalian" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Laporan Pengembalian</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>/admin/laporan-sanksi" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Laporan Sanksi/Denda</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="<?= base_url() ?>/admin/laporan-kunjungan" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Laporan Kunjungan</p>
+                  </a>
+                </li>
+
+              </ul>
             </li>
 
             <li class="nav-item has-treeview">
@@ -70,25 +107,25 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="<?=base_url()?>/admin/prodi" class="nav-link">
+                  <a href="<?= base_url() ?>/admin/prodi" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Program Studi</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?=base_url()?>/admin/lokasi" class="nav-link">
+                  <a href="<?= base_url() ?>/admin/lokasi" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Lokasi/Rak</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?=base_url()?>/admin/kategori" class="nav-link">
+                  <a href="<?= base_url() ?>/admin/kategori" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Kategori Buku</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="<?=base_url()?>/admin/pengguna" class="nav-link">
+                  <a href="<?= base_url() ?>/admin/pengguna" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Pengguna</p>
                   </a>

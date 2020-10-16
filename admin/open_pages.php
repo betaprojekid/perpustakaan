@@ -56,7 +56,7 @@ switch ($page) {
     include "pages/buku/actions.php";
     break;
 
-     // Modul kunjungan
+    // Modul kunjungan
   case 'kunjungan':
     if (!file_exists("pages/kunjungan/index.php")) die($error);
     include "pages/kunjungan/index.php";
@@ -89,9 +89,28 @@ switch ($page) {
     break;
 
     // Modul laporan
-  case 'laporan':
-    if (!file_exists("pages/laporan/index.php")) die($error);
-    include "pages/laporan/index.php";
+    // case 'laporan':
+    //   if (!file_exists("pages/laporan/index.php")) die($error);
+    //   include "pages/laporan/index.php";
+    //   break;
+  case 'laporan-kunjungan':
+    if (!file_exists("pages/laporan/kunjungan.php")) die($error);
+    include "pages/laporan/kunjungan.php";
+    break;
+
+  case 'laporan-peminjaman':
+    if (!file_exists("pages/laporan/peminjaman.php")) die($error);
+    include "pages/laporan/peminjaman.php";
+    break;
+
+  case 'laporan-pengembalian':
+    if (!file_exists("pages/laporan/pengembalian.php")) die($error);
+    include "pages/laporan/pengembalian.php";
+    break;
+
+  case 'laporan-sanksi':
+    if (!file_exists("pages/laporan/sanksi.php")) die($error);
+    include "pages/laporan/sanksi.php";
     break;
 
 

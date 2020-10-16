@@ -53,7 +53,6 @@ if(mysqli_num_rows($sql) > 0){
 
 $filename = 'buku.xlsx';
 
-
 header('Content-Type: application/vnd.ms-excel');
 header('Content-Disposition: attachment;filename='. $filename);
 header('Cache-Control: max-age=0');
