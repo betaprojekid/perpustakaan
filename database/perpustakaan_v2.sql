@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 15, 2020 at 07:00 PM
+-- Generation Time: Oct 17, 2020 at 08:10 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -319,9 +319,10 @@ CREATE TABLE `kunjungan` (
 --
 
 INSERT INTO `kunjungan` (`id`, `nim`, `nama`, `created_at`) VALUES
-(1, '1225555', 'nadiah siagian', '2020-10-15 23:51:30'),
-(2, '6566222', 'azhari panggabean', '2020-10-15 23:51:46'),
-(3, '33362', 'binsar sitomput', '2020-10-15 23:51:57');
+(1, '1225555', 'nadiah siagian', '2020-09-23 00:00:00'),
+(2, '6566222', 'azhari panggabean', '2020-10-10 00:00:00'),
+(3, '33362', 'binsar sitomput', '2020-10-16 17:00:00'),
+(4, '77788998887', 'dadang sutarjo', '2020-10-16 15:11:46');
 
 -- --------------------------------------------------------
 
@@ -396,13 +397,13 @@ CREATE TABLE `transaksi` (
 --
 
 INSERT INTO `transaksi` (`id`, `buku_id`, `anggota_id`, `tgl_pinjam`, `tgl_berakhir`, `tgl_kembali`, `status`, `denda`, `keterangan`, `created_at`, `updated_at`) VALUES
-(1, 1, 1, '2020-10-01', '2020-10-07', NULL, 'pinjam', NULL, '', '2020-10-15 17:13:04', NULL),
+(1, 1, 1, '2020-10-01', '2020-10-07', NULL, 'pinjam', NULL, '', '2020-10-17 17:13:04', NULL),
 (2, 3, 4, '2020-10-01', '2020-10-07', '2020-10-15', 'kembali', '4000', 'terkena denda karena telat 8 hari', '2020-10-15 19:54:04', '2020-10-15 23:21:39'),
 (3, 5, 7, '2020-10-01', '2020-10-14', NULL, 'pinjam', NULL, '', '2020-10-15 19:54:19', NULL),
-(4, 17, 13, '2020-10-07', '2020-10-22', '2020-10-15', 'kembali', '0', '', '2020-10-15 19:54:34', '2020-10-15 23:23:42'),
+(4, 17, 13, '2020-10-07', '2020-10-22', '2020-10-10', 'kembali', '0', '', '2020-10-15 19:54:34', '2020-10-15 23:23:42'),
 (5, 64, 57, '2020-10-10', '2020-10-24', NULL, 'pinjam', NULL, NULL, '2020-10-15 19:54:47', NULL),
 (6, 82, 72, '2020-10-10', '2020-10-17', NULL, 'pinjam', NULL, NULL, '2020-10-15 19:54:58', NULL),
-(7, 87, 5, '2020-10-10', '2020-10-17', NULL, 'pinjam', NULL, NULL, '2020-10-15 19:55:10', NULL);
+(7, 87, 5, '2020-10-10', '2020-10-17', NULL, 'pinjam', NULL, NULL, '2020-10-10 19:55:10', NULL);
 
 -- --------------------------------------------------------
 
@@ -521,7 +522,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `kunjungan`
 --
 ALTER TABLE `kunjungan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `lokasi_buku`

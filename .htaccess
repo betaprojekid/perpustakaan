@@ -35,7 +35,7 @@ RewriteRule ^admin/perpanjang-transaksi/(.*)$ admin/index.php?page=perpanjang-tr
 RewriteRule ^admin/kembali-transaksi/(.*)$ admin/index.php?page=kembali-transaksi&act=kembali&id=$1 [L]
 
 # kunjungan
-# RewriteRule ^admin/kunjungan$ admin/index.php?page=kunjungan [L]
+RewriteRule ^admin/kunjungan$ admin/index.php?page=kunjungan [L]
 
 # laporan
 # RewriteRule ^admin/laporan$ admin/index.php?page=laporan [L]

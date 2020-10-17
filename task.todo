@@ -15,12 +15,12 @@ fitur:
   ✔ fitur pengunjung @done (10/15/2020, 11:59:18 PM)
     ✔ absensi nama dan nim @fe @done (10/15/2020, 11:59:20 PM)
     ✔ cek absensi @be @done (10/15/2020, 11:59:22 PM)
-  ☐ fitur laporan
-    ☐ laporan peminjaman
-    ☐ laporan pengembalian
-    ☐ laporan sanksi
-    ☐ laporan kunjungan
-      ☐ export laporan per hari/ per minggu/ per bulan ke excel
+  ✔ fitur laporan @done (10/17/2020, 1:12:43 PM)
+    ✔ laporan peminjaman @done (10/17/2020, 11:15:09 AM)
+    ✔ laporan pengembalian @done (10/17/2020, 11:50:03 AM)
+    ✔ laporan sanksi @done (10/17/2020, 1:12:42 PM)
+    ✔ laporan kunjungan @done (10/17/2020, 10:26:59 AM)
+      ✔ export laporan per hari/ per minggu/ per bulan ke excel @done (10/17/2020, 10:26:58 AM)
   ✔ fitur buku @done (10/15/2020, 11:22:38 PM)
     ✔ pencarian @done(20-10-14 23:09)
     ✔ tambah @done(20-10-14 23:33)
@@ -72,3 +72,5 @@ pass:
   pass 12345678
 
   default selain itu 123456
+bug:
+  ✔ untuk bug bagian export gunakan yang export buku @done (10/17/2020, 10:26:52 AM)
